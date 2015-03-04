@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-03-04T17:29:41.385Z</updated>
+  <updated>2015-03-04T17:31:12.350Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[My Blog on Hexo/[DRAFT/]]]></title>
+    <title><![CDATA[My Blog on Hexo[DRAFT]]]></title>
     <link href="http://yiikou.com/2015/03/04/hexo-on-mac/"/>
     <id>http://yiikou.com/2015/03/04/hexo-on-mac/</id>
     <published>2015-03-04T13:11:58.000Z</published>
-    <updated>2015-03-04T17:29:14.000Z</updated>
+    <updated>2015-03-04T17:30:07.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Version_1-0">Version 1.0</h1>
 <p>1.<strong>搭建</strong></p>
 <ul>

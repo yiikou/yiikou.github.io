@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>first one | 一口宅</title>
+    <title>My Blog on Hexo/[DRAFT/] | 一口宅</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="yiikou">
     
-    <meta name="description" content="Hello every one , this is the first article in this blog .">
+    <meta name="description" itemprop="description" content="Some probs and solves i met when i built my blog by Hexo(mac)">
     
     
     
@@ -68,15 +68,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/01/24/first-one/" title="first one" itemprop="url">first one</a>
+      <a href="/2015/03/04/hexo-on-mac/" title="My Blog on Hexo/[DRAFT/]" itemprop="url">My Blog on Hexo/[DRAFT/]</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yiikou.com" title="yiikou">yiikou</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-01-24T07:51:00.000Z" itemprop="datePublished">1月 24 2015</time>
-    更新日期:<time datetime="2015-01-27T10:59:32.000Z" itemprop="dateModified">1月 27 2015</time>
+    <time datetime="2015-03-04T13:11:58.000Z" itemprop="datePublished">3月 4 2015</time>
+    更新日期:<time datetime="2015-03-04T17:29:14.000Z" itemprop="dateModified">3月 5 2015</time>
     
   </p>
 </header>
@@ -85,10 +85,31 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Version_1-0"><span class="toc-number">1.</span> <span class="toc-text">Version 1.0</span></a></li></ol>
 		</div>
 		
-		<p>Hello every one , this is the first article in this blog .</p>
+		<h1 id="Version_1-0">Version 1.0</h1>
+<p>1.<strong>搭建</strong></p>
+<ul>
+<li><p>最初在 win 上的时候是在<a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">cnfeat</a>的指导下完成的(总的文档<a href="http://hexo.io/docs/index.html" target="_blank" rel="external">在此</a>),但是在 mac 下安装 node.js 的时候貌似遇到权限问题,后来是通过这么解决:</p>
+<blockquote>
+<p>$sudo chown -R `whoami` ~/.npm<br>$sudo chown -R `whoami` /usr/local/lib/node_modules</p>
+</blockquote>
+</li>
+<li><p>主题改的是 jacman</p>
+<blockquote>
+<p>$ git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="external">https://github.com/wuchong/jacman.git</a> themes/jacman</p>
+</blockquote>
+</li>
+<li>jacman的主题在3.0.0-rc.4的 Hexo 版本中有 bug, 无法渲染        css 文件.因此要用这个主题模板的话还是退版本保平安(根据<a href="https://github.com/hexojs/hexo/issues/1059" target="_blank" rel="external">github 讨论</a>)<blockquote>
+<p>npm uninstall hexo -g<br>npm install hexo@2.8.3 -g</p>
+</blockquote>
+</li>
+<li>安装了两个插件:<blockquote>
+<p>$ npm install hexo-generator-sitemap<br>$ npm install hexo-generator-feed</p>
+</blockquote>
+</li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -101,14 +122,14 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/example/">example</a>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yiikou.com/2015/01/24/first-one/" data-title="first one | 一口宅" data-tsina="190698642" class="share clearfix">
+  <div data-url="http://yiikou.com/2015/03/04/hexo-on-mac/" data-title="My Blog on Hexo/[DRAFT/] | 一口宅" data-tsina="190698642" class="share clearfix">
   </div>
 
 </div>
@@ -117,14 +138,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/03/04/hexo-on-mac/" title="My Blog on Hexo/[DRAFT/]">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  My Blog on Hexo/[DRAFT/]</span>
+
+<div class="next">
+<a href="/2015/01/24/first-one/"  title="first one">
+ <strong>NEXT:</strong><br/> 
+ <span>first one
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -138,7 +159,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Version_1-0"><span class="toc-number">1.</span> <span class="toc-text">Version 1.0</span></a></li></ol>
   </div>
 
 <div id="asidepart">

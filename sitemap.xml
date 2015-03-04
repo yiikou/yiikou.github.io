@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yiikou.com/2015/03/04/hexo-on-mac/</loc>
+    <lastmod>2015-03-04T17:29:14.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yiikou.com/2015/01/24/first-one/</loc>
     <lastmod>2015-01-27T10:59:32.000Z</lastmod>
   </url>

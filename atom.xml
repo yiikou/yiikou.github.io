@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[一口宅]]></title>
+  <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yiikou.com/"/>
+  <updated>2015-03-04T09:24:46.405Z</updated>
+  <id>http://yiikou.com/</id>
+  
+  <author>
+    <name><![CDATA[yiikou]]></name>
+    <email><![CDATA[yiikou6892@qq.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[first one]]></title>
+    <link href="http://yiikou.com/2015/01/24/first-one/"/>
+    <id>http://yiikou.com/2015/01/24/first-one/</id>
+    <published>2015-01-24T07:51:00.000Z</published>
+    <updated>2015-01-27T10:59:32.000Z</updated>
+    <content type="html"><![CDATA[<p>Hello every one , this is the first article in this blog .</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hello every one , this is the first article in this blog .</p>
+]]>
+    </summary>
+    
+      <category term="hexo" scheme="http://yiikou.com/tags/hexo/"/>
+    
+      <category term="example" scheme="http://yiikou.com/categories/example/"/>
+    
+  </entry>
+  
+</feed>

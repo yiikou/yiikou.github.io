@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-03-19T15:51:08.308Z</updated>
+  <updated>2015-04-13T09:28:22.900Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -15,11 +15,78 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[ReadMe]]></title>
+    <link href="http://yiikou.com/2015/04/13/ReadMe/"/>
+    <id>http://yiikou.com/2015/04/13/ReadMe/</id>
+    <published>2015-04-13T08:56:22.000Z</published>
+    <updated>2015-04-13T09:22:19.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><p>Simple List 是书单的简版,无类别,按照确定的时间顺序 append<br>模板:  </p>
+<blockquote>
+<p>预计完成时间<br>是否延期<br>类别:[多次|一次性]<br>进度:</p>
+</blockquote>
+</li>
+<li><p>Read List 是书单的正式版,按照类别区分读物,并带上总结心得笔记的地址</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[就是 ReadMe 啦]]>
+    
+    </summary>
+    
+      <category term="规则" scheme="http://yiikou.com/tags/%E8%A7%84%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Simple List]]></title>
+    <link href="http://yiikou.com/2015/04/13/Simple-List/"/>
+    <id>http://yiikou.com/2015/04/13/Simple-List/</id>
+    <published>2015-04-13T08:31:26.000Z</published>
+    <updated>2015-04-13T09:28:02.000Z</updated>
+    <content type="html"><![CDATA[<font size="8"><strong>读书清单</strong></font>
+
+<h1 id="Clean_Code[Robert_C-_Martin]">Clean Code[Robert C. Martin]</h1>
+<blockquote>
+<p>预计完成时间:2015.4.30<br>是否延期:?<br>类别:多次<br>进度:</p>
+</blockquote>
+<h1 id="Spring_in_Action(v2)">Spring in Action(v2)</h1>
+<blockquote>
+<p>预计完成时间:2015.5.10<br>是否延期:?<br>类别:多次<br>进度:</p>
+</blockquote>
+<h1 id="经济学原理(微观)[曼昆]">经济学原理(微观)[曼昆]</h1>
+<blockquote>
+<p>预计完成时间:2015.6.10<br>是否延期:?<br>类别:多次<br>进度:</p>
+</blockquote>
+<h1 id="我也能做_CTO_之程序员职业规划[高阳]">我也能做 CTO 之程序员职业规划[高阳]</h1>
+<blockquote>
+<p>预计完成时间:2015.4.30<br>是否延期:?<br>类别:一次性<br>进度:</p>
+</blockquote>
+<h1 id="Thinking_in_Java[Bruce_Eckel]">Thinking in Java[Bruce Eckel]</h1>
+<blockquote>
+<p>预计完成时间:2015.6.10<br>是否延期:?<br>类别:多次<br>进度:</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[流水型的书单.近期新书 =>xxx]]>
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://yiikou.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="清单" scheme="http://yiikou.com/tags/%E6%B8%85%E5%8D%95/"/>
+    
+      <category term="计划" scheme="http://yiikou.com/categories/%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[健身笔记[持续更新0319]]]></title>
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-03-19T15:50:44.000Z</updated>
+    <updated>2015-04-13T08:40:03.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -178,14 +245,15 @@
 <h2 id="健身进度">健身进度</h2>
 <p>截止日期2015/3/5: 第一次健身,未使用哑铃器械</p>
 <p>PS:增肌期有氧目的有两个：1. 提高心肺功能 2. 控制体脂增长过快。一般可以安排到力量训练后做20分钟，每周2-3次，根据体脂增长速度调节。增肌期晚上可以吃慢吸收碳水</p>
-<p>2015/3/10,第一次私教</p>
+<p>2015/03/10,第一次私教</p>
 <blockquote>
 <p>划船机4组每组15下,30(35?)kg, 放松动作&gt;&gt;颈前下拉4组&gt;&gt;2(30kg)<em>15+35kg</em>12+40kg<em>12&gt;&gt;放松&gt;&gt;high pully 四组,20kg 左右4组,每组15下&gt;&gt;龙门架肱二头肌动作20kg4组&gt;&gt;仰卧起坐4组</em>15</p>
 </blockquote>
-<p>2015/3/19,倒数第二次私教</p>
+<p>2015/03/19,倒数第二次私教</p>
 <blockquote>
 <p>动作要有爆发力(撕裂肌肉),然后收的时候缓缓,目的在于伸缩肌肉.</p>
 </blockquote>
+<p>2015/04/13,今天进行在校的第四次训练,本周开始腿部训练</p>
 ]]></content>
     <summary type="html">
     <![CDATA[我的健身笔记.漫漫健身路, doing]]>
@@ -205,7 +273,7 @@
     <link href="http://yiikou.com/2015/03/04/hexo-on-mac/"/>
     <id>http://yiikou.com/2015/03/04/hexo-on-mac/</id>
     <published>2015-03-04T13:11:58.000Z</published>
-    <updated>2015-03-04T17:30:07.000Z</updated>
+    <updated>2015-04-13T09:17:17.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Version_1-0">Version 1.0</h1>
 <p>1.<strong>搭建</strong></p>
 <ul>
@@ -228,6 +296,13 @@
 </blockquote>
 </li>
 </ul>
+<p>2.<strong>主题</strong></p>
+<ul>
+<li>改自 jacman 主题(fork from <a href="http://yangjian.me/workspace/introducing-pacman-theme/" target="_blank" rel="external">pacman</a>) 主题</li>
+<li>title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中<br>date: 2013-12-02 15:30:16    #文章生成时间，一般不改，当然也可以任意修改<br>categories: example #分类<br>tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格<br>description: 附加一段文章摘要，字数最好在140字以内。</li>
+</ul>
+<hr>
+<p>以下正文</p>
 ]]></content>
     <summary type="html">
     <![CDATA[Some probs and solves i met when i built my blog by Hexo(mac)]]>

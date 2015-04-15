@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-15T12:19:40.045Z</updated>
+  <updated>2015-04-15T12:27:46.588Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yiikou.com/2015/04/15/nodejs-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/15/nodejs-新手/</id>
     <published>2015-04-15T11:50:38.000Z</published>
-    <updated>2015-04-15T12:19:24.000Z</updated>
+    <updated>2015-04-15T12:23:24.000Z</updated>
     <content type="html"><![CDATA[<p>初学教程是跟着 <a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="external">Node 入门</a>这本书(才42页),一步一步教你完成一个基于 NodeJs 的 web应用(上传图片).<br>在文章的开头,比较笼统的介绍了下 nodejs.</p>
 <h1 id="特性"><strong>特性</strong></h1>
 <ul>
@@ -130,7 +130,7 @@
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-04-13T15:49:00.000Z</updated>
+    <updated>2015-04-15T12:27:39.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -298,6 +298,13 @@
 <p>动作要有爆发力(撕裂肌肉),然后收的时候缓缓,目的在于伸缩肌肉.</p>
 </blockquote>
 <p>2015/04/13,今天进行在校的第四次训练,本周开始腿部训练</p>
+<p>2015/04/15,腿部训练</p>
+<blockquote>
+<p>下蹲四组7.5+10+12.5+12.5&gt;&gt;小腿上抬(片)4+4+5+5 (感觉可以再加重,两小时后感觉恢复的挺好了,没有第一次练后的酸爽感,<strong>另</strong>还有两种* 弓步  </p>
+<ul>
+<li>借助史密斯机垫脚尖)</li>
+</ul>
+</blockquote>
 ]]></content>
     <summary type="html">
     <![CDATA[我的健身笔记.漫漫健身路, doing]]>

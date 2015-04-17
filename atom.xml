@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-15T12:27:46.588Z</updated>
+  <updated>2015-04-17T06:58:39.957Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -15,11 +15,137 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[nodejs 新手]]></title>
+    <title><![CDATA[我也能做 CTO 之程序员职业规划]]></title>
+    <link href="http://yiikou.com/2015/04/16/-%E6%88%91%E4%B9%9F%E8%83%BD%E5%81%9A-CTO-%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92/"/>
+    <id>http://yiikou.com/2015/04/16/-我也能做-CTO-之程序员职业规划/</id>
+    <published>2015-04-16T13:07:48.000Z</published>
+    <updated>2015-04-17T06:50:32.000Z</updated>
+    <content type="html"><![CDATA[<p>前记:我非常敬佩的孟哥推荐的书,值得好好读读. 这本书出版于2009年.</p>
+<h1 id="程序员职业规划哲理思想">程序员职业规划哲理思想</h1>
+<h1 id="程序员职业规划之魔鬼金字塔">程序员职业规划之魔鬼金字塔</h1>
+<p><em>关于 IQ/EQ/AQ/SQ</em>  </p>
+<ul>
+<li>IQ 和 EQ倒还好理解,AQ(Adversity, 即逆商)和 SQ(Spiritual, 即灵商)倒是第一次听说…  </li>
+<li>思考力=&gt;执行力=&gt;行动力=&gt;沟通表达能力  </li>
+<li>EQ:沟通应该在一个层次,回馈应该在一个频道上.沟通上并无对错,只有立场.观念的不同  </li>
+<li>AQ: 为自己的精神减刑;每次困难都是机会;<strong>多给自己创造一些略高于自己水平的挑战</strong>  </li>
+<li>IQ=&gt;认知活动,EQ=&gt;情感活动,AQ=&gt;意志活动</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[读书笔记]]>
+    
+    </summary>
+    
+      <category term="职业规划" scheme="http://yiikou.com/tags/%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92/"/>
+    
+      <category term="阅读" scheme="http://yiikou.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="读书笔记" scheme="http://yiikou.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="书籍" scheme="http://yiikou.com/categories/%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Clean Code[Robert C. Martin]]]></title>
+    <link href="http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/"/>
+    <id>http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/</id>
+    <published>2015-04-16T11:47:29.000Z</published>
+    <updated>2015-04-17T06:57:35.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Character_2_命名相关">Character 2 命名相关</h1>
+]]></content>
+    <summary type="html">
+    <![CDATA[读书笔记]]>
+    
+    </summary>
+    
+      <category term="阅读" scheme="http://yiikou.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="读书笔记" scheme="http://yiikou.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="代码规范" scheme="http://yiikou.com/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+      <category term="书籍" scheme="http://yiikou.com/categories/%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[深入Spring]]></title>
+    <link href="http://yiikou.com/2015/04/16/%E6%B7%B1%E5%85%A5Spring/"/>
+    <id>http://yiikou.com/2015/04/16/深入Spring/</id>
+    <published>2015-04-16T06:56:23.000Z</published>
+    <updated>2015-04-16T13:02:53.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+      <category term="博客" scheme="http://yiikou.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="文章" scheme="http://yiikou.com/tags/%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Html5 新手]]></title>
+    <link href="http://yiikou.com/2015/04/16/Html5-%E6%96%B0%E6%89%8B/"/>
+    <id>http://yiikou.com/2015/04/16/Html5-新手/</id>
+    <published>2015-04-16T06:06:14.000Z</published>
+    <updated>2015-04-16T13:04:22.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[Html5 初学记录]]>
+    
+    </summary>
+    
+      <category term="Html5" scheme="http://yiikou.com/tags/Html5/"/>
+    
+      <category term="编程语言" scheme="http://yiikou.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JavaScript 新手]]></title>
+    <link href="http://yiikou.com/2015/04/16/JavaScript-%E6%96%B0%E6%89%8B/"/>
+    <id>http://yiikou.com/2015/04/16/JavaScript-新手/</id>
+    <published>2015-04-16T06:05:55.000Z</published>
+    <updated>2015-04-16T13:02:40.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
+<ul>
+<li>除号(“/“)  </li>
+<li>通过var声明对象  </li>
+<li>分号(“;”)  </li>
+<li>两种数据类型  <ol>
+<li>原始类型  </li>
+<li>对象类型  </li>
+</ol>
+</li>
+<li>有自己的内存管理机制(自动对内存进行垃圾回收)  </li>
+<li>不区分整数浮点数  </li>
+<li>被零整除不报错  </li>
+<li>非数字值和任何值都不相等包括自身  </li>
+<li><strong>并非块作用域,而是函数作用域,且声明提前(预编译的时候进行)</strong>   </li>
+<li><strong>作用域链</strong>  </li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[JS 初学记录]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yiikou.com/tags/JavaScript/"/>
+    
+      <category term="编程语言" scheme="http://yiikou.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Node.js 新手]]></title>
     <link href="http://yiikou.com/2015/04/15/nodejs-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/15/nodejs-新手/</id>
     <published>2015-04-15T11:50:38.000Z</published>
-    <updated>2015-04-15T12:23:24.000Z</updated>
+    <updated>2015-04-16T06:11:53.000Z</updated>
     <content type="html"><![CDATA[<p>初学教程是跟着 <a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="external">Node 入门</a>这本书(才42页),一步一步教你完成一个基于 NodeJs 的 web应用(上传图片).<br>在文章的开头,比较笼统的介绍了下 nodejs.</p>
 <h1 id="特性"><strong>特性</strong></h1>
 <ul>
@@ -37,7 +163,7 @@
     
     </summary>
     
-      <category term="nodejs" scheme="http://yiikou.com/tags/nodejs/"/>
+      <category term="Node.js" scheme="http://yiikou.com/tags/Node-js/"/>
     
       <category term="编程语言" scheme="http://yiikou.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
@@ -73,10 +199,11 @@
     <link href="http://yiikou.com/2015/04/13/Simple-List/"/>
     <id>http://yiikou.com/2015/04/13/Simple-List/</id>
     <published>2015-04-13T08:31:26.000Z</published>
-    <updated>2015-04-13T15:55:44.000Z</updated>
+    <updated>2015-04-17T06:58:04.000Z</updated>
     <content type="html"><![CDATA[<font size="8"> <strong>读书清单</strong></font>
 
 <h1 id="Clean_Code[Robert_C-_Martin]">Clean Code[Robert C. Martin]</h1>
+<h2 id="test">test</h2>
 <ul>
 <li>预计完成时间:2015.4.30  </li>
 <li>是否延期:?  </li>
@@ -126,11 +253,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[健身笔记[持续更新0413]]]></title>
+    <title><![CDATA[健身笔记[持续更新0416]]]></title>
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-04-15T12:27:39.000Z</updated>
+    <updated>2015-04-16T13:04:41.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -300,10 +427,15 @@
 <p>2015/04/13,今天进行在校的第四次训练,本周开始腿部训练</p>
 <p>2015/04/15,腿部训练</p>
 <blockquote>
-<p>下蹲四组7.5+10+12.5+12.5&gt;&gt;小腿上抬(片)4+4+5+5 (感觉可以再加重,两小时后感觉恢复的挺好了,没有第一次练后的酸爽感,<strong>另</strong>还有两种* 弓步  </p>
+<p>下蹲四组7.5+10+12.5+12.5&gt;&gt;小腿上抬(片)4+4+5+5 (感觉可以再加重,两小时后感觉恢复的挺好了,没有第一次练后的酸爽感,<strong>另</strong>还有两种  </p>
 <ul>
+<li>弓步  </li>
 <li>借助史密斯机垫脚尖)</li>
 </ul>
+</blockquote>
+<p>2015/04/16,肩部训练</p>
+<blockquote>
+<p>记录下重量.推举6片(需要协助),平举&amp;侧举5kg( 头两组7.5kg)</p>
 </blockquote>
 ]]></content>
     <summary type="html">

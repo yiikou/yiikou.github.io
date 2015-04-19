@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/</loc>
+    <lastmod>2015-04-19T14:13:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yiikou.com/2015/03/04/hexo-on-mac/</loc>
     <lastmod>2015-04-19T06:57:15.000Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://yiikou.com/2015/04/13/Simple-List/</loc>
     <lastmod>2015-04-17T07:04:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/</loc>
-    <lastmod>2015-04-17T06:57:35.000Z</lastmod>
   </url>
   
   <url>

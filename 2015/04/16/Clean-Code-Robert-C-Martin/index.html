@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-04-16T11:47:29.000Z" itemprop="datePublished">4月 16 2015</time>
-    更新日期:<time datetime="2015-04-17T06:57:35.000Z" itemprop="dateModified">4月 17 2015</time>
+    更新日期:<time datetime="2015-04-19T14:13:54.000Z" itemprop="dateModified">4月 19 2015</time>
     
   </p>
 </header>
@@ -86,10 +86,48 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_2_命名相关"><span class="toc-number">1.</span> <span class="toc-text">Character 2 命名相关</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_2_命名相关"><span class="toc-number">1.</span> <span class="toc-text">Character 2 命名相关</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_3_函数"><span class="toc-number">2.</span> <span class="toc-text">Character 3 函数</span></a></li></ol>
 		</div>
 		
 		<h1 id="Character_2_命名相关">Character 2 命名相关</h1>
+<ul>
+<li>接口实现不要 I 打头了</li>
+<li>类名:名词 or 名词短语</li>
+<li>方法名:动词 or 动词短语</li>
+<li><strong>名词长短应与其作用域大小相对应</strong></li>
+<li>作有意义的区分<blockquote>
+<p>不要废话,例如 data/string/info/ 表名中的 table 等后缀<br>a/an/the 前缀    </p>
+</blockquote>
+</li>
+<li>避免误导<blockquote>
+<p>即赋予 list 等保留字语义</p>
+</blockquote>
+</li>
+<li>不要添加没用的语境</li>
+</ul>
+<h1 id="Character_3_函数">Character 3 函数</h1>
+<ul>
+<li>函数就该<strong>短短短短短</strong><blockquote>
+<p>呃,这个暂时无法认同(做不到)</p>
+</blockquote>
+</li>
+<li><strong>函数应该做一件事.做好这件事.只做件事.</strong></li>
+<li>判断函数是否不止做了一件事,可以看看是否可以再拆分,拆分出来的函数不仅只是<em>单纯地诠释其实现</em></li>
+<li>理清抽象层级并且隔离开<blockquote>
+<p>不让细节混杂</p>
+</blockquote>
+</li>
+<li>switch “将switch语句埋到抽象工厂底下”<blockquote>
+<p>理解吃力</p>
+</blockquote>
+</li>
+<li>使用描述性的名称</li>
+<li>函数参数<strong>少少少</strong></li>
+<li>尽量返回参数,不要通过更改入参的方式达到目的</li>
+<li>不要穿 boolean</li>
+<li>没有自然联系的不要二元入参</li>
+<li>三元入参更是杀杀杀</li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -147,7 +185,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_2_命名相关"><span class="toc-number">1.</span> <span class="toc-text">Character 2 命名相关</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_2_命名相关"><span class="toc-number">1.</span> <span class="toc-text">Character 2 命名相关</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Character_3_函数"><span class="toc-number">2.</span> <span class="toc-text">Character 3 函数</span></a></li></ol>
   </div>
 
 <div id="asidepart">

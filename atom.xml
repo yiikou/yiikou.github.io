@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-19T06:54:50.795Z</updated>
+  <updated>2015-04-19T06:57:31.251Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -506,7 +506,7 @@
     <link href="http://yiikou.com/2015/03/04/hexo-on-mac/"/>
     <id>http://yiikou.com/2015/03/04/hexo-on-mac/</id>
     <published>2015-03-04T13:11:58.000Z</published>
-    <updated>2015-04-17T07:08:19.000Z</updated>
+    <updated>2015-04-19T06:57:15.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Version_1-0">Version 1.0</h1>
 <p>1.<strong>搭建</strong></p>
 <ul>
@@ -553,6 +553,7 @@
 <ol>
 <li>修改配置文件时注意YAML语法，参数冒号:后一定要留空格</li>
 <li>关于文章的目录生成,在主题下地配置文件中有 toc 属性,但是在某些文章中有效,有的无效(有生成,但是不显示),后来经过试验后发现…. 得有二级标题(至少一个),然后才会正常显示….觉得不合理啊,源码务必得抽时间看下,改改</li>
+<li>配置~/.bash_property,添加alias myhexo=’cd /Users/yiikou/github/yiikou.io’. 然后 source 一下.这样每次在 terminal 中输入 myhexo 就可以定位到 hexo 的目录下啦 </li>
 </ol>
 ]]></content>
     <summary type="html">

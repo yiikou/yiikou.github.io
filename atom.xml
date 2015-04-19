@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-17T06:58:39.957Z</updated>
+  <updated>2015-04-19T06:54:50.795Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -110,9 +110,10 @@
     <link href="http://yiikou.com/2015/04/16/JavaScript-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/16/JavaScript-新手/</id>
     <published>2015-04-16T06:05:55.000Z</published>
-    <updated>2015-04-16T13:02:40.000Z</updated>
+    <updated>2015-04-19T06:54:23.000Z</updated>
     <content type="html"><![CDATA[<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
 <ul>
+<li>ECMAScript 是语言标准( ECMA = 欧洲计算机制造协会)</li>
 <li>除号(“/“)  </li>
 <li>通过var声明对象  </li>
 <li>分号(“;”)  </li>
@@ -121,13 +122,62 @@
 <li>对象类型  </li>
 </ol>
 </li>
+<li>“$”表示私有</li>
+<li>几种特殊”型号”,[+|-]Infinity,NaN,null(object),undefine</li>
+<li>null==undefine but null!===undefine</li>
 <li>有自己的内存管理机制(自动对内存进行垃圾回收)  </li>
 <li>不区分整数浮点数  </li>
 <li>被零整除不报错  </li>
 <li>非数字值和任何值都不相等包括自身  </li>
 <li><strong>并非块作用域,而是函数作用域,且声明提前(预编译的时候进行)</strong>   </li>
 <li><strong>作用域链</strong>  </li>
+<li>delete 后长度不变(var 声明的无法删除)</li>
+<li>只有在查询属性时才会体会到继承的存在,而设置属性则和继承无关.(让程序员可以有选择地覆盖继承的属性)</li>
+<li>null 和 undefine 均无属性</li>
+<li>数据属性4特性:值/枚举性/可配置性/可写性</li>
+<li>存取器属性4特性:读取/写入/可配置性/可写性</li>
+<li>三种创建对象的方式<ol>
+<li>对象直接量 : var</li>
+<li>new +构造函数</li>
+<li>Object.create()  </li>
+</ol>
+</li>
+<li>JSON = JavaScript Object Notation</li>
+<li>日期,正则, error对象和 undefine 值无法序列化和还原</li>
+<li>date 无法还原 ; Nan 和 [+|-]Infinity 序列化结果为 null</li>
 </ul>
+<h1 id="第三章">第三章</h1>
+<h2 id="类型转换">类型转换</h2>
+<h1 id="第五章">第五章</h1>
+<ul>
+<li>debugger</li>
+<li>“use strict”
+　　</li>
+</ul>
+<h1 id="第六章-对象">第六章-对象</h1>
+<p><em>第六章很重要,需要精读,这里先简单标记下</em></p>
+<h2 id="几个重要的点">几个重要的点</h2>
+<ol>
+<li>继承的规则</li>
+<li>属性访问错误</li>
+<li>属性的 getter&amp;setter </li>
+<li>属性的特性</li>
+<li>对象三属性<ul>
+<li>原型</li>
+<li>类</li>
+<li>可扩展性</li>
+</ul>
+</li>
+<li>序列化对象</li>
+</ol>
+<h3 id="几个重要的方法">几个重要的方法</h3>
+<ol>
+<li>hasOwnProperty()</li>
+<li>propertyIsEnumberable()</li>
+<li>isPrototypeOf()</li>
+<li>Object.create()</li>
+<li>Object.getPrototypeOf()</li>
+</ol>
 ]]></content>
     <summary type="html">
     <![CDATA[JS 初学记录]]>
@@ -199,11 +249,11 @@
     <link href="http://yiikou.com/2015/04/13/Simple-List/"/>
     <id>http://yiikou.com/2015/04/13/Simple-List/</id>
     <published>2015-04-13T08:31:26.000Z</published>
-    <updated>2015-04-17T06:58:04.000Z</updated>
+    <updated>2015-04-17T07:04:07.000Z</updated>
     <content type="html"><![CDATA[<font size="8"> <strong>读书清单</strong></font>
 
 <h1 id="Clean_Code[Robert_C-_Martin]">Clean Code[Robert C. Martin]</h1>
-<h2 id="test">test</h2>
+<h2 id="yo">yo</h2>
 <ul>
 <li>预计完成时间:2015.4.30  </li>
 <li>是否延期:?  </li>
@@ -456,7 +506,7 @@
     <link href="http://yiikou.com/2015/03/04/hexo-on-mac/"/>
     <id>http://yiikou.com/2015/03/04/hexo-on-mac/</id>
     <published>2015-03-04T13:11:58.000Z</published>
-    <updated>2015-04-14T13:00:27.000Z</updated>
+    <updated>2015-04-17T07:08:19.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Version_1-0">Version 1.0</h1>
 <p>1.<strong>搭建</strong></p>
 <ul>
@@ -499,9 +549,10 @@
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#menu 中添加</span></div><div class="line"><span class="label">menu:</span><span class="preprocessor">#已有</span></div><div class="line">  关于: /about</div></pre></td></tr></table></figure>
 
-<h1 id="常见错误">常见错误</h1>
+<h1 id="常见错误&amp;Tips">常见错误&amp;Tips</h1>
 <ol>
 <li>修改配置文件时注意YAML语法，参数冒号:后一定要留空格</li>
+<li>关于文章的目录生成,在主题下地配置文件中有 toc 属性,但是在某些文章中有效,有的无效(有生成,但是不显示),后来经过试验后发现…. 得有二级标题(至少一个),然后才会正常显示….觉得不合理啊,源码务必得抽时间看下,改改</li>
 </ol>
 ]]></content>
     <summary type="html">

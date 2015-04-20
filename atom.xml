@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-19T14:14:21.829Z</updated>
+  <updated>2015-04-20T08:18:52.556Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yiikou.com/2015/04/16/-%E6%88%91%E4%B9%9F%E8%83%BD%E5%81%9A-CTO-%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92/"/>
     <id>http://yiikou.com/2015/04/16/-我也能做-CTO-之程序员职业规划/</id>
     <published>2015-04-16T13:07:48.000Z</published>
-    <updated>2015-04-17T06:50:32.000Z</updated>
+    <updated>2015-04-20T06:39:40.000Z</updated>
     <content type="html"><![CDATA[<p>前记:我非常敬佩的孟哥推荐的书,值得好好读读. 这本书出版于2009年.</p>
 <h1 id="程序员职业规划哲理思想">程序员职业规划哲理思想</h1>
 <h1 id="程序员职业规划之魔鬼金字塔">程序员职业规划之魔鬼金字塔</h1>
@@ -29,7 +29,11 @@
 <li>思考力=&gt;执行力=&gt;行动力=&gt;沟通表达能力  </li>
 <li>EQ:沟通应该在一个层次,回馈应该在一个频道上.沟通上并无对错,只有立场.观念的不同  </li>
 <li>AQ: 为自己的精神减刑;每次困难都是机会;<strong>多给自己创造一些略高于自己水平的挑战</strong>  </li>
-<li>IQ=&gt;认知活动,EQ=&gt;情感活动,AQ=&gt;意志活动</li>
+<li>IQ=&gt;认知活动,EQ=&gt;情感活动,AQ=&gt;意志活动  </li>
+<li>暂时无法理解 &gt; 精神资本增加了人类的生命意义,价值观和最终归属的思考维度</li>
+<li>物质和世俗,两大障碍物质级利益,世俗即言论/眼光</li>
+<li>顺境用 EQ, 逆境用 AQ,心灵选择用 SQ,[配图 p73]</li>
+<li>职业定位诶….再缓缓.从目前了解不多的信息来看.自己会偏向系统或者软件架构师</li>
 </ul>
 ]]></content>
     <summary type="html">
@@ -52,7 +56,7 @@
     <link href="http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/"/>
     <id>http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/</id>
     <published>2015-04-16T11:47:29.000Z</published>
-    <updated>2015-04-19T14:13:54.000Z</updated>
+    <updated>2015-04-20T08:18:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Character_2_命名相关">Character 2 命名相关</h1>
 <ul>
 <li>接口实现不要 I 打头了</li>
@@ -88,10 +92,34 @@
 <li>使用描述性的名称</li>
 <li>函数参数<strong>少少少</strong></li>
 <li>尽量返回参数,不要通过更改入参的方式达到目的</li>
-<li>不要穿 boolean</li>
+<li>不要传 boolean</li>
 <li>没有自然联系的不要二元入参</li>
 <li>三元入参更是杀杀杀</li>
+<li>可以把入参的语义加到函数命名中有利于解释函数的意图/参数的顺序和意图</li>
+<li>分隔指令和询问&gt;即一个函数只做一件事</li>
+<li>使用异常替代返回错误码&gt;把错误处理码从主路径代码中分离出来</li>
+<li>抽离 try/catch 代码块&gt;简单来说即把 try 中的东西和 catch 中的东西抽出来(例如 logger.log()变为 logError(e)函数)</li>
+<li>附一下该章fitnesse 整改后的代码<br>  ‘’’java<br>  package fitnesse.html;  </li>
 </ul>
+<p>import fitnesse.responders.run.SuiteResponder;<br>import fitnesse.wiki.*;  </p>
+<p>public class SetupTeardownIncluder {<br>  private PageData pageData;<br>  private boolean isSuite;<br>  private WikiPage testPage;<br>  private StringBuffer newPageContent;<br>  private PageCrawler pageCrawler;  </p>
+<p>  public static String render(PageData pageData) throws Exception {<br>    return render(pageData, false);<br>}  </p>
+<p>  public static String render(PageData pageData, boolean isSuite)<br>    throws Exception {<br>    return new SetupTeardownIncluder(pageData).render(isSuite);<br>  }<br>  private SetupTeardownIncluder(PageData pageData) {<br>    this.pageData = pageData;<br>    testPage = pageData.getWikiPage();<br>    pageCrawler = testPage.getPageCrawler();<br>    newnewPageContent = new StringBuffer();<br>  }  </p>
+<p>  private String render(boolean isSuite) throws Exception {<br>    this.isSuite = isSuite;<br>    if (isTestPage())<br>      includeSetupAndTeardownPages();<br>    return pageData.getHtml();<br>  }  </p>
+<p>  private boolean isTestPage() throws Exception {<br>    return pageData.hasAttribute(“Test”);<br>  }  </p>
+<p>  private void includeSetupAndTeardownPages() throws Exception {<br>    includeSetupPages();<br>    includePageContent();<br>    includeTeardownPages();<br>    updatePageContent();<br>  }  </p>
+<p>  private void includeSetupPages() throws Exception {<br>    if (isSuite)<br>      includeSuiteSetupPage();<br>    includeSetupPage();<br>  }  </p>
+<p>  private void includeSuiteSetupPage() throws Exception {<br>    include(SuiteResponder.SUITE_SETUP_NAME, “-setup”);<br>  }  </p>
+<p>  private void includeSetupPage() throws Exception {<br>    include(“SetUp”, “-setup”);<br>  }  </p>
+<p>  private void includePageContent() throws Exception {<br>    newPageContent.append(pageData.getContent());<br>  }  </p>
+<p>  private void includeTeardownPages() throws Exception {<br>    includeTeardownPage();<br>    if (isSuite)<br>      includeSuiteTeardownPage();<br>  }  </p>
+<p>  private void includeTeardownPage() throws Exception {<br>    include(“TearDown”, “-teardown”);<br>  }  </p>
+<p>  private void includeSuiteTeardownPage() throws Exception {<br>    include(SuiteResponder.SUITE_TEARDOWN_NAME, “-teardown”);<br>  }  </p>
+<p>  private void updatePageContent() throws Exception {<br>    pageData.setContent(newPageContent.toString());<br>  }  </p>
+<p>  private void include(String pageName, String arg) throws Exception {<br>    WikiPage inheritedPage = findInheritedPage(pageName);<br>    if (inheritedPage != null) {<br>      String pagePathName = getPathNameForPage(inheritedPage);<br>      buildIncludeDirective(pagePathName, arg);<br>    }<br>  }  </p>
+<p>  private WikiPage findInheritedPage(String pageName) throws Exception {<br>    return PageCrawlerImpl.getInheritedPage(pageName, testPage);<br>  }  </p>
+<p>  private String getPathNameForPage(WikiPage page) throws Exception {<br>    WikiPagePath pagePath = pageCrawler.getFullPath(page);<br>    return PathParser.render(pagePath);<br>  }  </p>
+<p>  private void buildIncludeDirective(String pagePathName, String arg) {<br>    newPageContent<br>    .append(“\n!include “)<br>    .append(arg)<br>    .append(“ .”)<br>    .append(pagePathName)<br>    .append(“\n”);<br>  }<br>}<br>‘’’</p>
 ]]></content>
     <summary type="html">
     <![CDATA[读书笔记]]>

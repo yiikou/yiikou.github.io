@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2015-04-20T15:30:34.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yiikou.com/2015/04/16/Clean-Code-Robert-C-Martin/</loc>
-    <lastmod>2015-04-20T13:05:25.000Z</lastmod>
+    <lastmod>2015-04-20T13:06:55.000Z</lastmod>
   </url>
   
   <url>
@@ -24,11 +29,6 @@
   <url>
     <loc>http://yiikou.com/2015/04/13/Simple-List/</loc>
     <lastmod>2015-04-17T07:04:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2015-04-16T13:04:41.000Z</lastmod>
   </url>
   
   <url>

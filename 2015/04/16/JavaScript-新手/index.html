@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-04-16T06:05:55.000Z" itemprop="datePublished">4月 16 2015</time>
-    更新日期:<time datetime="2015-04-19T06:54:23.000Z" itemprop="dateModified">4月 19 2015</time>
+    更新日期:<time datetime="2015-04-20T15:49:44.000Z" itemprop="dateModified">4月 20 2015</time>
     
   </p>
 </header>
@@ -86,7 +86,7 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#对我而言比较重要的特性"><span class="toc-number">1.</span> <span class="toc-text">对我而言比较重要的特性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章"><span class="toc-number">2.</span> <span class="toc-text">第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#类型转换"><span class="toc-number">2.1.</span> <span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章"><span class="toc-number">3.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章-对象"><span class="toc-number">4.</span> <span class="toc-text">第六章-对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几个重要的点"><span class="toc-number">4.1.</span> <span class="toc-text">几个重要的点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几个重要的方法"><span class="toc-number">4.1.1.</span> <span class="toc-text">几个重要的方法</span></a></li></ol></li></ol></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#对我而言比较重要的特性"><span class="toc-number">1.</span> <span class="toc-text">对我而言比较重要的特性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章"><span class="toc-number">2.</span> <span class="toc-text">第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#类型转换"><span class="toc-number">2.1.</span> <span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章"><span class="toc-number">3.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章-对象"><span class="toc-number">4.</span> <span class="toc-text">第六章-对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几个重要的点"><span class="toc-number">4.1.</span> <span class="toc-text">几个重要的点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几个重要的方法"><span class="toc-number">4.1.1.</span> <span class="toc-text">几个重要的方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第七章-数组"><span class="toc-number">5.</span> <span class="toc-text">第七章-数组</span></a></li></ol>
 		</div>
 		
 		<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
@@ -156,6 +156,21 @@
 <li>Object.create()</li>
 <li>Object.getPrototypeOf()</li>
 </ol>
+<h1 id="第七章-数组">第七章-数组</h1>
+<ol>
+<li>索引不一定连续</li>
+<li>array[something]这个 someting 为数字的话是在0~2^32-2</li>
+<li>所有的索引都是属性名,但是只有0~2^32-2之间的整数才是索引.<blockquote>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a[-<span class="number">1.23</span>]=<span class="keyword">true</span>;	<span class="comment">//这将创建一个名为"-1.23"的属性  </span></div><div class="line">a[<span class="number">1.000</span>]=<span class="number">0</span>;		<span class="comment">//这是数组的第1001个元素  </span></div><div class="line">a[<span class="string">"1000"</span>];		<span class="comment">//与 a[1]相等</span></div></pre></td></tr></table></figure>
+
+<ol>
+<li>数组里面的东西很随便…意思是什么类型都可以</li>
+<li>无越界概念, 查询的对象不存在的话得到 undefined</li>
+<li>省略的元素和数组元素根本不存在是有区别的</li>
+</ol>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -213,7 +228,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#对我而言比较重要的特性"><span class="toc-number">1.</span> <span class="toc-text">对我而言比较重要的特性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章"><span class="toc-number">2.</span> <span class="toc-text">第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#类型转换"><span class="toc-number">2.1.</span> <span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章"><span class="toc-number">3.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章-对象"><span class="toc-number">4.</span> <span class="toc-text">第六章-对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几个重要的点"><span class="toc-number">4.1.</span> <span class="toc-text">几个重要的点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几个重要的方法"><span class="toc-number">4.1.1.</span> <span class="toc-text">几个重要的方法</span></a></li></ol></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#对我而言比较重要的特性"><span class="toc-number">1.</span> <span class="toc-text">对我而言比较重要的特性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章"><span class="toc-number">2.</span> <span class="toc-text">第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#类型转换"><span class="toc-number">2.1.</span> <span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章"><span class="toc-number">3.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章-对象"><span class="toc-number">4.</span> <span class="toc-text">第六章-对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几个重要的点"><span class="toc-number">4.1.</span> <span class="toc-text">几个重要的点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几个重要的方法"><span class="toc-number">4.1.1.</span> <span class="toc-text">几个重要的方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第七章-数组"><span class="toc-number">5.</span> <span class="toc-text">第七章-数组</span></a></li></ol>
   </div>
 
 <div id="asidepart">

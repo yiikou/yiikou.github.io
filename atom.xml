@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-20T15:30:36.967Z</updated>
+  <updated>2015-04-20T15:49:56.520Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -163,7 +163,7 @@
     <link href="http://yiikou.com/2015/04/16/JavaScript-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/16/JavaScript-新手/</id>
     <published>2015-04-16T06:05:55.000Z</published>
-    <updated>2015-04-19T06:54:23.000Z</updated>
+    <updated>2015-04-20T15:49:44.000Z</updated>
     <content type="html"><![CDATA[<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
 <ul>
 <li>ECMAScript 是语言标准( ECMA = 欧洲计算机制造协会)</li>
@@ -230,6 +230,21 @@
 <li>isPrototypeOf()</li>
 <li>Object.create()</li>
 <li>Object.getPrototypeOf()</li>
+</ol>
+<h1 id="第七章-数组">第七章-数组</h1>
+<ol>
+<li>索引不一定连续</li>
+<li>array[something]这个 someting 为数字的话是在0~2^32-2</li>
+<li>所有的索引都是属性名,但是只有0~2^32-2之间的整数才是索引.<blockquote>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a[-<span class="number">1.23</span>]=<span class="keyword">true</span>;	<span class="comment">//这将创建一个名为"-1.23"的属性  </span></div><div class="line">a[<span class="number">1.000</span>]=<span class="number">0</span>;		<span class="comment">//这是数组的第1001个元素  </span></div><div class="line">a[<span class="string">"1000"</span>];		<span class="comment">//与 a[1]相等</span></div></pre></td></tr></table></figure>
+
+<ol>
+<li>数组里面的东西很随便…意思是什么类型都可以</li>
+<li>无越界概念, 查询的对象不存在的话得到 undefined</li>
+<li>省略的元素和数组元素根本不存在是有区别的</li>
 </ol>
 ]]></content>
     <summary type="html">
@@ -360,7 +375,7 @@
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-04-20T15:30:34.000Z</updated>
+    <updated>2015-04-20T15:31:04.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -542,7 +557,10 @@
 </blockquote>
 <p>2015/04/20,背部训练</p>
 <blockquote>
-<p>记录下重量,颈前下拉(不动型)30kg(头三组还行,最后一组动作很不到位).颈前下拉(微微后仰型)6片,估计15kg才..不过动作都还算ok, 下次加重.坐姿划船60斤4组(最后一组72斤还是66斤来着,然后逐步减低),重量可以加强.肱二头训练4片(估计10kg…..)四组&gt;&gt;觉得今天的背部训练部分动作不标准,小臂的酸痛感很强,然后觉得肱二头长歪了=0=(shenmegui)</p>
+<p>记录下重量,颈前下拉(不动型)30kg(头三组还行,最后一组动作很不到位).颈前下拉(微微后仰型)6片,估计15kg才..不过动作都还算ok, 下次加重.坐姿划船60斤4组(最后一组72斤还是66斤来着,然后逐步减低),重量可以加强.肱二头训练4片(估计10kg…..)四组  </p>
+<blockquote>
+<p>觉得今天的背部训练部分动作不标准,小臂的酸痛感很强,然后觉得肱二头长歪了=0=(shenmegui)</p>
+</blockquote>
 </blockquote>
 ]]></content>
     <summary type="html">

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-20T15:49:56.520Z</updated>
+  <updated>2015-04-23T14:51:16.993Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yiikou.com/2015/04/16/-%E6%88%91%E4%B9%9F%E8%83%BD%E5%81%9A-CTO-%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92/"/>
     <id>http://yiikou.com/2015/04/16/-我也能做-CTO-之程序员职业规划/</id>
     <published>2015-04-16T13:07:48.000Z</published>
-    <updated>2015-04-20T06:39:40.000Z</updated>
+    <updated>2015-04-21T14:40:45.000Z</updated>
     <content type="html"><![CDATA[<p>前记:我非常敬佩的孟哥推荐的书,值得好好读读. 这本书出版于2009年.</p>
 <h1 id="程序员职业规划哲理思想">程序员职业规划哲理思想</h1>
 <h1 id="程序员职业规划之魔鬼金字塔">程序员职业规划之魔鬼金字塔</h1>
@@ -34,6 +34,12 @@
 <li>物质和世俗,两大障碍物质级利益,世俗即言论/眼光</li>
 <li>顺境用 EQ, 逆境用 AQ,心灵选择用 SQ,[配图 p73]</li>
 <li>职业定位诶….再缓缓.从目前了解不多的信息来看.自己会偏向系统或者软件架构师</li>
+</ul>
+<h1 id="大学生职业规划技巧">大学生职业规划技巧</h1>
+<ul>
+<li>四方面重要的能力:<strong>眼界/学习方法/技能/规范</strong> . 锦上添花:不同的特质和新技术的见解</li>
+<li>从自己最擅长的方向去切入主题</li>
+<li>真正的成功需要积累和智慧的选择</li>
 </ul>
 ]]></content>
     <summary type="html">
@@ -163,7 +169,7 @@
     <link href="http://yiikou.com/2015/04/16/JavaScript-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/16/JavaScript-新手/</id>
     <published>2015-04-16T06:05:55.000Z</published>
-    <updated>2015-04-20T15:49:44.000Z</updated>
+    <updated>2015-04-23T14:50:55.000Z</updated>
     <content type="html"><![CDATA[<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
 <ul>
 <li>ECMAScript 是语言标准( ECMA = 欧洲计算机制造协会)</li>
@@ -241,11 +247,51 @@
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a[-<span class="number">1.23</span>]=<span class="keyword">true</span>;	<span class="comment">//这将创建一个名为"-1.23"的属性  </span></div><div class="line">a[<span class="number">1.000</span>]=<span class="number">0</span>;		<span class="comment">//这是数组的第1001个元素  </span></div><div class="line">a[<span class="string">"1000"</span>];		<span class="comment">//与 a[1]相等</span></div></pre></td></tr></table></figure>
 
+
 <ol>
 <li>数组里面的东西很随便…意思是什么类型都可以</li>
 <li>无越界概念, 查询的对象不存在的话得到 undefined</li>
 <li>省略的元素和数组元素根本不存在是有区别的</li>
+<li>Array.prototype 中定义的一些很有用的操作数组函数<ul>
+<li>join();  </li>
+<li>reverse();</li>
+<li>sort();</li>
+<li>concat();</li>
+<li>slice();    //可负号</li>
+<li>splice();</li>
+<li>push();</li>
+<li>pop();</li>
+<li>unshift();</li>
+<li>shift();</li>
+<li>toString();</li>
+</ul>
+</li>
+<li>EMCAScript 5中的大多数数组方法的第一个参数接收一个函数<strong>function(数组元素,元素的索引,数组本身)</strong><ul>
+<li>forEach();</li>
+<li>map();</li>
+<li>fliter();</li>
+<li>every(); and some();</li>
+</ul>
+</li>
+<li>字符串是可读的</li>
 </ol>
+<h1 id="第八章-方法">第八章-方法</h1>
+<ol>
+<li><strong>闭包</strong>: JS 的函数可以嵌套在其他函数中定义,这样他们就可以访问它们被定义时所处的作用域中得任何变量./函数定义时的作用域链到函数执行时依然有效.</li>
+<li>函数的名称将成为函数内部的一个局部变量</li>
+<li><strong>表达式方式定义的函数在定义之前无法调用</strong></li>
+<li>内嵌函数的作用域规则</li>
+<li>四种方法调用 JS 函数</li>
+<li>函数判断当前是否为严格模式</li>
+</ol>
+<figure class="highlight (function(){"><figcaption><span>return !this;}());```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">7. </span>方法的链式调用</div><div class="line"><span class="bullet">8. </span>嵌套函数里地 this 并不指向调用外层函数的上下文</div><div class="line"><span class="bullet">9. </span>无形参的构造函数调用可以省略圆括号</div><div class="line"><span class="bullet">10. </span>构造函数是创建一个新的对象,构造函数的 this 是引用自这个新创建的对象. eg:new o.m()中,o 并不是调用的上下文</div><div class="line"><span class="bullet">11. </span>arguments 指向实参对象的引用</div><div class="line"><span class="bullet">12. </span>callee and caller</div><div class="line"><span class="bullet">13. </span>函数可以赋值给变量....可以作为数组元素....</div><div class="line"><span class="bullet">14. </span>(function(){}())这里function 的左括号代表立即执行</div><div class="line"><span class="bullet">15. </span><span class="emphasis">*(function(){}())===(function(){})()?*</span></div><div class="line"><span class="bullet">16. </span>"当内部函数在定义它的作用域的外部被引用时，就创建了该内部函数的一个闭包。这种情况下我们称既不是内部函数局部变量，也不是其参数的变量为自由变量，称外部函数的调用环境为封闭闭包的环境。从本质上讲，如果内部函数引用了位于外部函数中的变量，相当于授权该变量能够被延迟使用。因此，当外部函数调用完成后，这些变量的内存不会被释放（最后的值会保存），闭包仍然需要使用它们"<span class="emphasis">*from*</span>[<span class="link_label">javascript 闭包究竟是什么</span>][<span class="link_reference">1</span>]and推荐[<span class="link_label">JavaScript作用域链</span>][<span class="link_reference">2</span>]</div><div class="line"><span class="bullet">17. </span>用闭包实现私有属性存取方法</div><div class="line"><span class="bullet">18. </span>严重感觉 js 的"小约定"很多,debug 能力直接和大量的实践经验挂钩</div><div class="line"><span class="bullet">19. </span>call() and apply()</div></pre></td></tr></table></figure>
+
+
+<pre><code>   <span class="keyword">f</span>.<span class="built_in">call</span>(<span class="keyword">o</span>);    
+   <span class="keyword">f</span>.apply(<span class="keyword">o</span>);   
+</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以下代码和上面每行代码功能一样</div></pre></td></tr></table></figure>
+
+<p>java<br>       o.m = f ;<br>       o.m();<br>       delete o.m;<br>       ```</p>
 ]]></content>
     <summary type="html">
     <![CDATA[JS 初学记录]]>
@@ -375,7 +421,7 @@
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-04-20T15:31:04.000Z</updated>
+    <updated>2015-04-22T13:14:21.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -560,6 +606,13 @@
 <p>记录下重量,颈前下拉(不动型)30kg(头三组还行,最后一组动作很不到位).颈前下拉(微微后仰型)6片,估计15kg才..不过动作都还算ok, 下次加重.坐姿划船60斤4组(最后一组72斤还是66斤来着,然后逐步减低),重量可以加强.肱二头训练4片(估计10kg…..)四组  </p>
 <blockquote>
 <p>觉得今天的背部训练部分动作不标准,小臂的酸痛感很强,然后觉得肱二头长歪了=0=(shenmegui)</p>
+</blockquote>
+</blockquote>
+<p>2015/04/22,腿部训练</p>
+<blockquote>
+<p>记录下重量,下蹲10kg一组,12.5四组.下次增加到15kg每组8个. 弓步走,15步一组共四组,各10kg.踢腿(?)5片 x2+6片+7片共四组.  </p>
+<blockquote>
+<p>今天交流了下,大块肌肉比较好练,有几种动作非常有用很重要,卧推,引体向上,下蹲,提拉.胸可以增加上斜和下斜的锻炼.另,腹肌训练用腹肌撕裂者.</p>
 </blockquote>
 </blockquote>
 ]]></content>

@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-04-16T06:05:55.000Z" itemprop="datePublished">4月 16 2015</time>
-    更新日期:<time datetime="2015-04-23T14:50:55.000Z" itemprop="dateModified">4月 23 2015</time>
+    更新日期:<time datetime="2015-04-24T09:17:43.000Z" itemprop="dateModified">4月 24 2015</time>
     
   </p>
 </header>
@@ -210,7 +210,14 @@
    <span class="keyword">f</span>.apply(<span class="keyword">o</span>);   
 </code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以下代码和上面每行代码功能一样</div></pre></td></tr></table></figure>
 
-<p>java<br>       o.m = f ;<br>       o.m();<br>       delete o.m;<br>       ```</p>
+<p>java<br>       o.m = f ;<br>       o.m();<br>       delete o.m;<br>           ```     </p>
+<ol>
+<li>monkey-patching:新的方法是”包裹”原始方法的另一个泛函数</li>
+<li>bind()</li>
+<li>currying(柯里化) :传入bing 的实参会绑定至this</li>
+<li>运行时动态地创建并编译函数:function 构造函数,<strong>作用域</strong>要注意</li>
+<li>8.7&amp;8.8得再看一遍<em>(:з」∠)</em></li>
+</ol>
   
 	</div>
 		<footer class="article-footer clearfix">

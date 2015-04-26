@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-24T14:58:04.130Z</updated>
+  <updated>2015-04-26T16:46:37.546Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -13,6 +13,66 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[mygtd_项目环境&构建]]></title>
+    <link href="http://yiikou.com/2015/04/26/MyGtd-%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83-%E6%9E%84%E5%BB%BA/"/>
+    <id>http://yiikou.com/2015/04/26/MyGtd-项目环境-构建/</id>
+    <published>2015-04-26T08:56:45.000Z</published>
+    <updated>2015-04-26T16:46:25.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="项目结构">项目结构</h1>
+<p>构建一个名为mygtd的项目，该项目包含了三个子项目:    </p>
+<ul>
+<li>mygtd-dal  </li>
+<li>mygtd-biz  </li>
+<li>mygtd-web<br>项目采用:  </li>
+<li>WebX3  </li>
+<li>iBatis  </li>
+<li>spring3的  </li>
+<li>mysql数据库<br>mygtd-web:Web层的代码(WebX3+Spring3结合的框架)<br>mygtd-biz:业务逻辑层代码<br>mygtd-dal:数据持久层代码<blockquote>
+<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。     </p>
+</blockquote>
+</li>
+</ul>
+<p>前期准备:热部署设置</p>
+<h1 id="时间标签">时间标签</h1>
+<h2 id="day1">day1</h2>
+<ul>
+<li>配置热部署  </li>
+<li>远程debug 测试  </li>
+<li>确定技术方案  </li>
+</ul>
+<h1 id="day2">day2</h1>
+<ul>
+<li>完成后端框架搭建  </li>
+</ul>
+<h1 id="day3">day3</h1>
+<ul>
+<li>完成登入功能的后端逻辑代码</li>
+<li>测试数据库连接</li>
+<li>测试 ajax</li>
+</ul>
+<h1 id="day4">day4</h1>
+<ul>
+<li>测试前端框架</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[mygtd 的项目环境&构建]]>
+    
+    </summary>
+    
+      <category term="webx3" scheme="http://yiikou.com/tags/webx3/"/>
+    
+      <category term="spring" scheme="http://yiikou.com/tags/spring/"/>
+    
+      <category term="ibatis" scheme="http://yiikou.com/tags/ibatis/"/>
+    
+      <category term="maven" scheme="http://yiikou.com/tags/maven/"/>
+    
+      <category term="项目" scheme="http://yiikou.com/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[我也能做 CTO 之程序员职业规划]]></title>
@@ -192,7 +252,7 @@
     <link href="http://yiikou.com/2015/04/16/JavaScript-%E6%96%B0%E6%89%8B/"/>
     <id>http://yiikou.com/2015/04/16/JavaScript-新手/</id>
     <published>2015-04-16T06:05:55.000Z</published>
-    <updated>2015-04-24T09:17:43.000Z</updated>
+    <updated>2015-04-25T02:20:51.000Z</updated>
     <content type="html"><![CDATA[<h1 id="对我而言比较重要的特性">对我而言比较重要的特性</h1>
 <ul>
 <li>ECMAScript 是语言标准( ECMA = 欧洲计算机制造协会)</li>
@@ -321,6 +381,10 @@
 <li>currying(柯里化) :传入bing 的实参会绑定至this</li>
 <li>运行时动态地创建并编译函数:function 构造函数,<strong>作用域</strong>要注意</li>
 <li>8.7&amp;8.8得再看一遍<em>(:з」∠)</em></li>
+</ol>
+<h1 id="第九章-类">第九章-类</h1>
+<ol>
+<li></li>
 </ol>
 ]]></content>
     <summary type="html">

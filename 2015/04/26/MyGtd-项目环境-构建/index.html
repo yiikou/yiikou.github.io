@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>深入Spring | 一口宅</title>
+    <title>mygtd_项目环境&amp;构建 | 一口宅</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="yiikou">
+    
+    <meta name="description" itemprop="description" content="mygtd 的项目环境&amp;构建">
     
     
     
@@ -67,15 +69,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/16/深入Spring/" title="深入Spring" itemprop="url">深入Spring</a>
+      <a href="/2015/04/26/MyGtd-项目环境-构建/" title="mygtd_项目环境&amp;构建" itemprop="url">mygtd_项目环境&amp;构建</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yiikou.com" title="yiikou">yiikou</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-04-16T06:56:23.000Z" itemprop="datePublished">4月 16 2015</time>
-    更新日期:<time datetime="2015-04-16T13:02:53.000Z" itemprop="dateModified">4月 16 2015</time>
+    <time datetime="2015-04-26T08:56:45.000Z" itemprop="datePublished">4月 26 2015</time>
+    更新日期:<time datetime="2015-04-26T16:46:25.000Z" itemprop="dateModified">4月 27 2015</time>
     
   </p>
 </header>
@@ -84,24 +86,65 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">2.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">2.1.</span> <span class="toc-text">day1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day2"><span class="toc-number">3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day3"><span class="toc-number">4.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day4"><span class="toc-number">5.</span> <span class="toc-text">day4</span></a></li></ol>
 		</div>
 		
-		  
+		<h1 id="项目结构">项目结构</h1>
+<p>构建一个名为mygtd的项目，该项目包含了三个子项目:    </p>
+<ul>
+<li>mygtd-dal  </li>
+<li>mygtd-biz  </li>
+<li>mygtd-web<br>项目采用:  </li>
+<li>WebX3  </li>
+<li>iBatis  </li>
+<li>spring3的  </li>
+<li>mysql数据库<br>mygtd-web:Web层的代码(WebX3+Spring3结合的框架)<br>mygtd-biz:业务逻辑层代码<br>mygtd-dal:数据持久层代码<blockquote>
+<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。     </p>
+</blockquote>
+</li>
+</ul>
+<p>前期准备:热部署设置</p>
+<h1 id="时间标签">时间标签</h1>
+<h2 id="day1">day1</h2>
+<ul>
+<li>配置热部署  </li>
+<li>远程debug 测试  </li>
+<li>确定技术方案  </li>
+</ul>
+<h1 id="day2">day2</h1>
+<ul>
+<li>完成后端框架搭建  </li>
+</ul>
+<h1 id="day3">day3</h1>
+<ul>
+<li>完成登入功能的后端逻辑代码</li>
+<li>测试数据库连接</li>
+<li>测试 ajax</li>
+</ul>
+<h1 id="day4">day4</h1>
+<ul>
+<li>测试前端框架</li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/博客/">博客</a><a href="/tags/文章/">文章</a>
+  <span></span> <a href="/tags/webx3/">webx3</a><a href="/tags/spring/">spring</a><a href="/tags/ibatis/">ibatis</a><a href="/tags/maven/">maven</a>
   </div>
 
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/项目/">项目</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yiikou.com/2015/04/16/深入Spring/" data-title="深入Spring | 一口宅" data-tsina="190698642" class="share clearfix">
+  <div data-url="http://yiikou.com/2015/04/26/MyGtd-项目环境-构建/" data-title="mygtd_项目环境&amp;构建 | 一口宅" data-tsina="190698642" class="share clearfix">
   </div>
 
 </div>
@@ -110,19 +153,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/04/16/Clean-Code-Robert-C-Martin/" title="Clean Code[Robert C. Martin]">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  Clean Code[Robert C. Martin]</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/04/16/Html5-新手/"  title="Html5 新手">
+<a href="/2015/04/16/-我也能做-CTO-之程序员职业规划/"  title="我也能做 CTO 之程序员职业规划">
  <strong>NEXT:</strong><br/> 
- <span>Html5 新手
+ <span>我也能做 CTO 之程序员职业规划
 </span>
 </a>
 </div>
@@ -139,7 +174,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">2.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">2.1.</span> <span class="toc-text">day1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day2"><span class="toc-number">3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day3"><span class="toc-number">4.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day4"><span class="toc-number">5.</span> <span class="toc-text">day4</span></a></li></ol>
   </div>
 
 <div id="asidepart">

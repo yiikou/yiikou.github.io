@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-04-26T16:46:37.546Z</updated>
+  <updated>2015-05-09T16:45:49.367Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -15,50 +15,112 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[mygtd_项目环境&构建]]></title>
+    <title><![CDATA[mac下mysql终端启动]]></title>
+    <link href="http://yiikou.com/2015/04/29/%E9%85%8D%E7%BD%AEmac%E4%B8%8Bmysql%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC/"/>
+    <id>http://yiikou.com/2015/04/29/配置mac下mysql启动脚本/</id>
+    <published>2015-04-29T07:42:08.000Z</published>
+    <updated>2015-04-29T07:58:52.000Z</updated>
+    <content type="html"><![CDATA[<p>配置~/.bash_property,<br>添加:    </p>
+<ul>
+<li>启动Mysql服务    </li>
+</ul>
+<figure class="highlight alias"><figcaption><span>mysqlstart=’sudo</span><a href="/Library/StartupItems/MySQLCOM/MySQLCOM">start’```   </a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">   </div><div class="line"><span class="bullet">* </span>停止Mysql服务</div></pre></td></tr></table></figure>
+
+<p>alias mysqlstop=’sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop’</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="bullet">* </span>重启Mysql服务</div></pre></td></tr></table></figure>
+
+<p>alias mysqlstop=’sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart’```</p>
+<p>然后 source 一下</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[mac下mysql终端启动]]>
+    
+    </summary>
+    
+      <category term="脚本" scheme="http://yiikou.com/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="mysql" scheme="http://yiikou.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[gtdweb_项目环境&构建]]></title>
     <link href="http://yiikou.com/2015/04/26/MyGtd-%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83-%E6%9E%84%E5%BB%BA/"/>
     <id>http://yiikou.com/2015/04/26/MyGtd-项目环境-构建/</id>
     <published>2015-04-26T08:56:45.000Z</published>
-    <updated>2015-04-26T16:46:25.000Z</updated>
+    <updated>2015-05-01T16:07:36.000Z</updated>
     <content type="html"><![CDATA[<h1 id="项目结构">项目结构</h1>
-<p>构建一个名为mygtd的项目，该项目包含了三个子项目:    </p>
+<p>构建一个名为gtdweb的项目，该项目包含了三个子项目:    </p>
 <ul>
-<li>mygtd-dal  </li>
-<li>mygtd-biz  </li>
-<li>mygtd-web<br>项目采用:  </li>
+<li>gtdweb-dal  </li>
+<li>gtdweb-biz  </li>
+<li>gtdweb-web<br>项目采用:  </li>
 <li>WebX3  </li>
 <li>iBatis  </li>
 <li>spring3的  </li>
-<li>mysql数据库<br>mygtd-web:Web层的代码(WebX3+Spring3结合的框架)<br>mygtd-biz:业务逻辑层代码<br>mygtd-dal:数据持久层代码<blockquote>
-<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。     </p>
+<li>mysql数据库<br>gtdweb-web:Web层的代码(WebX3+Spring3结合的框架)<br>gtdweb-biz:业务逻辑层代码<br>gtdweb-dal:数据持久层代码<blockquote>
+<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。<br>还要添加 ibatis-common 这个包&amp; ibatis-core(这两个是否为必须未验证)   </p>
 </blockquote>
 </li>
 </ul>
 <p>前期准备:热部署设置</p>
+<h1 id="痛点">痛点</h1>
+<ol>
+<li>如何增加页面</li>
+<li>跳转</li>
+<li>和前端配合</li>
+<li>$rundata.request.session</li>
+<li>session中预存类型</li>
+<li>共享 layout</li>
+</ol>
+<h1 id="优化点">优化点</h1>
+<ol>
+<li>接口代理</li>
+<li>分为子项目</li>
+<li>扫描装载 bean</li>
+</ol>
+<h1 id="Q&amp;A">Q&amp;A</h1>
+<ol>
+<li>ibatis sqlmap resource 路径总是不对.无法扎到文件.最后在所有可能的路径都放了一个,排查出.</li>
+<li>首页显示在 pipeline.xml中的pl-valves:analyzeURL设置下</li>
+<li>新添页面的 module 的搜索路径的配置在web- 新添. xml 的<services:module-loader>下</services:module-loader></li>
+<li>未执行 screen.xx.java</li>
+<li>VM中可用的对象有两个来源，一个是你在应用程序里放入context的对象，一个是<pull>里放进去的对象。</pull></li>
+<li><strong>screenplaceholder</strong></li>
+<li><strong>内部跳转只跳了 screen?</strong></li>
+</ol>
+<h1 id="Tips">Tips</h1>
+<ol>
+<li>内部重定向不走analyzeURL这个value</li>
+<li>要用@Context@Param是指从request.getParameter中取。而control的参数实际是被置入context中的，相当于context.put。</li>
+<li>实现内部重定向，你可以直接调用TurbineRunData.setRedirectTarget(“a”)，或者在screen/action中注入Navigator接口，调用Navigator.forwardTo(“a”)方法。</li>
+<li>希望共享某个action，你可以通过module-loader把这个action类包含到你的子应用中</li>
+<li>在screen和action中,可以进行“内部重定向”;内部重 定向发生在pipeline内部,浏览器并不了解内部重定向;外部重定向发出第二个请求;</li>
+</ol>
 <h1 id="时间标签">时间标签</h1>
 <h2 id="day1">day1</h2>
 <ul>
-<li>配置热部署  </li>
+<li>配置热部署<br>  <code>-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -noverify -javaagent:/Users/yiikou/WorkSpace/jar/jrebel/jrebel.jar</code></li>
 <li>远程debug 测试  </li>
 <li>确定技术方案  </li>
 </ul>
-<h1 id="day2">day2</h1>
+<h2 id="day2">day2</h2>
 <ul>
 <li>完成后端框架搭建  </li>
 </ul>
-<h1 id="day3">day3</h1>
+<h2 id="day3">day3</h2>
 <ul>
 <li>完成登入功能的后端逻辑代码</li>
-<li>测试数据库连接</li>
+<li>测试数据库连接 </li>
 <li>测试 ajax</li>
 </ul>
-<h1 id="day4">day4</h1>
+<h2 id="day4">day4</h2>
 <ul>
 <li>测试前端框架</li>
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[mygtd 的项目环境&构建]]>
+    <![CDATA[gtdweb 的项目环境&构建]]>
     
     </summary>
     
@@ -511,11 +573,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[健身笔记[持续更新0420]]]></title>
+    <title><![CDATA[健身笔记[持续更新0509]]]></title>
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-04-24T12:21:39.000Z</updated>
+    <updated>2015-05-09T16:45:31.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -712,6 +774,27 @@
 <p>2015/04/24,肩部训练+腹部</p>
 <blockquote>
 <p>记录下重量,上举5组(片)4+5+6+6每组十二+7八次;平举+侧举7.5kg八2组,5 kg 十五2组;负重腹部,48单位未知<em>(:з」∠)</em>四组</p>
+</blockquote>
+<p>2015/04/27,胸部训练</p>
+<blockquote>
+<p>记录下重量,自由卧推7.5kg(+10kg), 龙门架夹胸1片可以标准动作</p>
+</blockquote>
+<p>2015/04/30,腿部训练</p>
+<blockquote>
+<p>记录下重量,深蹲12.5x2x15+15x2x10,弓步10kg四组每组16步.抬腿7片四组12</p>
+</blockquote>
+<p>2015/05/01,胸部训练</p>
+<p>2015/05/04,背部训练</p>
+<blockquote>
+<p>记录下重量，颈前下拉，8x1x8+7x2x8+6x2x12，小臂酸痛，因为手握得太紧</p>
+</blockquote>
+<p>2015/05/05,肩部训练</p>
+<blockquote>
+<p>记录下重量，上推，5x15+6x2x15+7x2x12+8x6，前平举侧平举，7.5x6+5x4x15，</p>
+</blockquote>
+<p>20150/05/09，胸部训练，前几天跑步去了</p>
+<blockquote>
+<p>记录下重量，斜上推，斯密斯基，5x1x12+7.5x2x12+10x1x8+7.5x2x12+5x1x12;卧推，7.5x4x12;斜下推，12x4x12;飞鸟，7.5x3x8；龙门架夹胸,5x1x12+10x2x8+5x2x12，记得要手臂尽量保持不变形，不要弯；腹肌撕裂者到第十天，腹肌腿上抬15x4很轻松；龙门架下拉，25x1x15+30x3x15+5x2x15</p>
 </blockquote>
 ]]></content>
     <summary type="html">

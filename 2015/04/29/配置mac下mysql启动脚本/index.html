@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>My Blog on Hexo[DRAFT] | 一口宅</title>
+    <title>mac下mysql终端启动 | 一口宅</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="yiikou">
     
-    <meta name="description" itemprop="description" content="Some probs and solves i met when i built my blog by Hexo(mac)">
+    <meta name="description" itemprop="description" content="mac下mysql终端启动">
     
     
     
@@ -69,15 +69,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/03/04/hexo-on-mac/" title="My Blog on Hexo[DRAFT]" itemprop="url">My Blog on Hexo[DRAFT]</a>
+      <a href="/2015/04/29/配置mac下mysql启动脚本/" title="mac下mysql终端启动" itemprop="url">mac下mysql终端启动</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yiikou.com" title="yiikou">yiikou</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-03-04T13:11:58.000Z" itemprop="datePublished">3月 4 2015</time>
-    更新日期:<time datetime="2015-04-19T06:57:15.000Z" itemprop="dateModified">4月 19 2015</time>
+    <time datetime="2015-04-29T07:42:08.000Z" itemprop="datePublished">4月 29 2015</time>
+    更新日期:<time datetime="2015-04-29T07:58:52.000Z" itemprop="dateModified">4月 29 2015</time>
     
   </p>
 </header>
@@ -86,77 +86,35 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Version_1-0"><span class="toc-number">1.</span> <span class="toc-text">Version 1.0</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见错误&Tips"><span class="toc-number">2.</span> <span class="toc-text">常见错误&Tips</span></a></li></ol>
+		
 		</div>
 		
-		<h1 id="Version_1-0">Version 1.0</h1>
-<p>1.<strong>搭建</strong></p>
+		<p>配置~/.bash_property,<br>添加:    </p>
 <ul>
-<li><p>最初在 win 上的时候是在<a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">cnfeat</a>的指导下完成的(总的文档<a href="http://hexo.io/docs/index.html" target="_blank" rel="external">在此</a>),但是在 mac 下安装 node.js 的时候貌似遇到权限问题,后来是通过这么解决:</p>
-<blockquote>
-<p>$sudo chown -R `whoami` ~/.npm<br>$sudo chown -R `whoami` /usr/local/lib/node_modules</p>
-</blockquote>
-</li>
-<li><p>主题改的是 jacman</p>
-<blockquote>
-<p>$ git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="external">https://github.com/wuchong/jacman.git</a> themes/jacman</p>
-</blockquote>
-</li>
-<li>jacman的主题在3.0.0-rc.4的 Hexo 版本中有 bug, 无法渲染        css 文件.因此要用这个主题模板的话还是退版本保平安(根据<a href="https://github.com/hexojs/hexo/issues/1059" target="_blank" rel="external">github 讨论</a>)<blockquote>
-<p>npm uninstall hexo -g<br>npm install hexo@2.8.3 -g</p>
-</blockquote>
-</li>
-<li>安装了两个插件:<blockquote>
-<p>$ npm install hexo-generator-sitemap<br>$ npm install hexo-generator-feed</p>
-</blockquote>
-</li>
+<li>启动Mysql服务    </li>
 </ul>
-<p>2.<strong>主题</strong></p>
-<ul>
-<li>改自 jacman 主题(fork from <a href="http://yangjian.me/workspace/introducing-pacman-theme/" target="_blank" rel="external">pacman</a>) 主题</li>
-</ul>
-<p>3.<strong>调教</strong></p>
-<ul>
-<li>修改post预设格式(按照个人习惯修改hexo\scaffolds中的post.md)  <blockquote>
-<p><strong>title</strong>: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中<br><strong>date</strong>: 2013-12-02 15:30:16    #文章生成时间，一般不改，当然也可以任意修改<br><strong>categories</strong>: example #分类<br><strong>tags</strong>: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格<br><strong>description</strong>: 附加一段文章摘要，字数最好在140字以内。  </p>
-<hr>
-<p><strong>以下正文</strong>  </p>
-</blockquote>
-</li>
-<li>导航栏添加自定义页面<br><code>hexo n page &quot;about&quot;</code><ol>
-<li>编辑hexo/source/about/index.md内容  </li>
-<li>修改themes/pacman/_config.yml文件  </li>
-</ol>
-</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#menu 中添加</span></div><div class="line"><span class="label">menu:</span><span class="preprocessor">#已有</span></div><div class="line">  关于: /about</div></pre></td></tr></table></figure>
+<figure class="highlight alias"><figcaption><span>mysqlstart=’sudo</span><a href="/Library/StartupItems/MySQLCOM/MySQLCOM">start’```   </a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">   </div><div class="line"><span class="bullet">* </span>停止Mysql服务</div></pre></td></tr></table></figure>
 
-<h1 id="常见错误&amp;Tips">常见错误&amp;Tips</h1>
-<ol>
-<li>修改配置文件时注意YAML语法，参数冒号:后一定要留空格</li>
-<li>关于文章的目录生成,在主题下地配置文件中有 toc 属性,但是在某些文章中有效,有的无效(有生成,但是不显示),后来经过试验后发现…. 得有二级标题(至少一个),然后才会正常显示….觉得不合理啊,源码务必得抽时间看下,改改</li>
-<li>配置~/.bash_property,添加alias myhexo=’cd /Users/yiikou/github/yiikou.io’. 然后 source 一下.这样每次在 terminal 中输入 myhexo 就可以定位到 hexo 的目录下啦 </li>
-</ol>
+<p>alias mysqlstop=’sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop’</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="bullet">* </span>重启Mysql服务</div></pre></td></tr></table></figure>
+
+<p>alias mysqlstop=’sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart’```</p>
+<p>然后 source 一下</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/hexo/">hexo</a>
+  <span></span> <a href="/tags/脚本/">脚本</a><a href="/tags/mysql/">mysql</a>
   </div>
 
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/hexo/">hexo</a>
-</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yiikou.com/2015/03/04/hexo-on-mac/" data-title="My Blog on Hexo[DRAFT] | 一口宅" data-tsina="190698642" class="share clearfix">
+  <div data-url="http://yiikou.com/2015/04/29/配置mac下mysql启动脚本/" data-title="mac下mysql终端启动 | 一口宅" data-tsina="190698642" class="share clearfix">
   </div>
 
 </div>
@@ -165,19 +123,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/03/05/健身笔记/" title="健身笔记[持续更新0509]">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  健身笔记[持续更新0509]</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/01/24/first-one/"  title="first one">
+<a href="/2015/04/26/MyGtd-项目环境-构建/"  title="gtdweb_项目环境&amp;构建">
  <strong>NEXT:</strong><br/> 
- <span>first one
+ <span>gtdweb_项目环境&amp;构建
 </span>
 </a>
 </div>
@@ -194,7 +144,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Version_1-0"><span class="toc-number">1.</span> <span class="toc-text">Version 1.0</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见错误&Tips"><span class="toc-number">2.</span> <span class="toc-text">常见错误&Tips</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">

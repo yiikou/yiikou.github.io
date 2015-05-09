@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>mygtd_项目环境&amp;构建 | 一口宅</title>
+    <title>gtdweb_项目环境&amp;构建 | 一口宅</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="yiikou">
     
-    <meta name="description" itemprop="description" content="mygtd 的项目环境&amp;构建">
+    <meta name="description" itemprop="description" content="gtdweb 的项目环境&amp;构建">
     
     
     
@@ -69,7 +69,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/26/MyGtd-项目环境-构建/" title="mygtd_项目环境&amp;构建" itemprop="url">mygtd_项目环境&amp;构建</a>
+      <a href="/2015/04/26/MyGtd-项目环境-构建/" title="gtdweb_项目环境&amp;构建" itemprop="url">gtdweb_项目环境&amp;构建</a>
   </h1>
   <p class="article-author">By
     
@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-04-26T08:56:45.000Z" itemprop="datePublished">4月 26 2015</time>
-    更新日期:<time datetime="2015-04-26T16:46:25.000Z" itemprop="dateModified">4月 27 2015</time>
+    更新日期:<time datetime="2015-05-01T16:07:36.000Z" itemprop="dateModified">5月 2 2015</time>
     
   </p>
 </header>
@@ -86,42 +86,75 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">2.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">2.1.</span> <span class="toc-text">day1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day2"><span class="toc-number">3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day3"><span class="toc-number">4.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day4"><span class="toc-number">5.</span> <span class="toc-text">day4</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#痛点"><span class="toc-number">2.</span> <span class="toc-text">痛点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#优化点"><span class="toc-number">3.</span> <span class="toc-text">优化点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q&A"><span class="toc-number">4.</span> <span class="toc-text">Q&A</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tips"><span class="toc-number">5.</span> <span class="toc-text">Tips</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">6.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">6.1.</span> <span class="toc-text">day1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day2"><span class="toc-number">6.2.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day3"><span class="toc-number">6.3.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day4"><span class="toc-number">6.4.</span> <span class="toc-text">day4</span></a></li></ol></li></ol>
 		</div>
 		
 		<h1 id="项目结构">项目结构</h1>
-<p>构建一个名为mygtd的项目，该项目包含了三个子项目:    </p>
+<p>构建一个名为gtdweb的项目，该项目包含了三个子项目:    </p>
 <ul>
-<li>mygtd-dal  </li>
-<li>mygtd-biz  </li>
-<li>mygtd-web<br>项目采用:  </li>
+<li>gtdweb-dal  </li>
+<li>gtdweb-biz  </li>
+<li>gtdweb-web<br>项目采用:  </li>
 <li>WebX3  </li>
 <li>iBatis  </li>
 <li>spring3的  </li>
-<li>mysql数据库<br>mygtd-web:Web层的代码(WebX3+Spring3结合的框架)<br>mygtd-biz:业务逻辑层代码<br>mygtd-dal:数据持久层代码<blockquote>
-<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。     </p>
+<li>mysql数据库<br>gtdweb-web:Web层的代码(WebX3+Spring3结合的框架)<br>gtdweb-biz:业务逻辑层代码<br>gtdweb-dal:数据持久层代码<blockquote>
+<p>需要找的驱动依赖包是：<br>查找ibatis，选择org.apache.servicemix.bundles.ibatis-sqlmap这个包。<br>查找dbcp，选择commons-dbcp。<br>查找mysql，选择mysql-connector-java。<br>还要添加 ibatis-common 这个包&amp; ibatis-core(这两个是否为必须未验证)   </p>
 </blockquote>
 </li>
 </ul>
 <p>前期准备:热部署设置</p>
+<h1 id="痛点">痛点</h1>
+<ol>
+<li>如何增加页面</li>
+<li>跳转</li>
+<li>和前端配合</li>
+<li>$rundata.request.session</li>
+<li>session中预存类型</li>
+<li>共享 layout</li>
+</ol>
+<h1 id="优化点">优化点</h1>
+<ol>
+<li>接口代理</li>
+<li>分为子项目</li>
+<li>扫描装载 bean</li>
+</ol>
+<h1 id="Q&amp;A">Q&amp;A</h1>
+<ol>
+<li>ibatis sqlmap resource 路径总是不对.无法扎到文件.最后在所有可能的路径都放了一个,排查出.</li>
+<li>首页显示在 pipeline.xml中的pl-valves:analyzeURL设置下</li>
+<li>新添页面的 module 的搜索路径的配置在web- 新添. xml 的<services:module-loader>下</services:module-loader></li>
+<li>未执行 screen.xx.java</li>
+<li>VM中可用的对象有两个来源，一个是你在应用程序里放入context的对象，一个是<pull>里放进去的对象。</pull></li>
+<li><strong>screenplaceholder</strong></li>
+<li><strong>内部跳转只跳了 screen?</strong></li>
+</ol>
+<h1 id="Tips">Tips</h1>
+<ol>
+<li>内部重定向不走analyzeURL这个value</li>
+<li>要用@Context@Param是指从request.getParameter中取。而control的参数实际是被置入context中的，相当于context.put。</li>
+<li>实现内部重定向，你可以直接调用TurbineRunData.setRedirectTarget(“a”)，或者在screen/action中注入Navigator接口，调用Navigator.forwardTo(“a”)方法。</li>
+<li>希望共享某个action，你可以通过module-loader把这个action类包含到你的子应用中</li>
+<li>在screen和action中,可以进行“内部重定向”;内部重 定向发生在pipeline内部,浏览器并不了解内部重定向;外部重定向发出第二个请求;</li>
+</ol>
 <h1 id="时间标签">时间标签</h1>
 <h2 id="day1">day1</h2>
 <ul>
-<li>配置热部署  </li>
+<li>配置热部署<br>  <code>-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -noverify -javaagent:/Users/yiikou/WorkSpace/jar/jrebel/jrebel.jar</code></li>
 <li>远程debug 测试  </li>
 <li>确定技术方案  </li>
 </ul>
-<h1 id="day2">day2</h1>
+<h2 id="day2">day2</h2>
 <ul>
 <li>完成后端框架搭建  </li>
 </ul>
-<h1 id="day3">day3</h1>
+<h2 id="day3">day3</h2>
 <ul>
 <li>完成登入功能的后端逻辑代码</li>
-<li>测试数据库连接</li>
+<li>测试数据库连接 </li>
 <li>测试 ajax</li>
 </ul>
-<h1 id="day4">day4</h1>
+<h2 id="day4">day4</h2>
 <ul>
 <li>测试前端框架</li>
 </ul>
@@ -144,7 +177,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yiikou.com/2015/04/26/MyGtd-项目环境-构建/" data-title="mygtd_项目环境&amp;构建 | 一口宅" data-tsina="190698642" class="share clearfix">
+  <div data-url="http://yiikou.com/2015/04/26/MyGtd-项目环境-构建/" data-title="gtdweb_项目环境&amp;构建 | 一口宅" data-tsina="190698642" class="share clearfix">
   </div>
 
 </div>
@@ -153,6 +186,14 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2015/04/29/配置mac下mysql启动脚本/" title="mac下mysql终端启动">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  mac下mysql终端启动</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2015/04/16/-我也能做-CTO-之程序员职业规划/"  title="我也能做 CTO 之程序员职业规划">
@@ -174,7 +215,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">2.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">2.1.</span> <span class="toc-text">day1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day2"><span class="toc-number">3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day3"><span class="toc-number">4.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#day4"><span class="toc-number">5.</span> <span class="toc-text">day4</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目结构"><span class="toc-number">1.</span> <span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#痛点"><span class="toc-number">2.</span> <span class="toc-text">痛点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#优化点"><span class="toc-number">3.</span> <span class="toc-text">优化点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q&A"><span class="toc-number">4.</span> <span class="toc-text">Q&A</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tips"><span class="toc-number">5.</span> <span class="toc-text">Tips</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#时间标签"><span class="toc-number">6.</span> <span class="toc-text">时间标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">6.1.</span> <span class="toc-text">day1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day2"><span class="toc-number">6.2.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day3"><span class="toc-number">6.3.</span> <span class="toc-text">day3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day4"><span class="toc-number">6.4.</span> <span class="toc-text">day4</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
@@ -221,6 +262,8 @@
 		
 			<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
 		
+			<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+		
 			<li><a href="/tags/spring/" title="spring">spring<sup>1</sup></a></li>
 		
 			<li><a href="/tags/webx3/" title="webx3">webx3<sup>1</sup></a></li>
@@ -238,6 +281,8 @@
 			<li><a href="/tags/笔记/" title="笔记">笔记<sup>2</sup></a></li>
 		
 			<li><a href="/tags/职业规划/" title="职业规划">职业规划<sup>1</sup></a></li>
+		
+			<li><a href="/tags/脚本/" title="脚本">脚本<sup>1</sup></a></li>
 		
 			<li><a href="/tags/规则/" title="规则">规则<sup>1</sup></a></li>
 		

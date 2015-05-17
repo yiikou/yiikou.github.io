@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>一口宅</title>
+    <title>mac下mysql5.1.6解决乱码 | 一口宅</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="yiikou">
     
-    <meta name="description" content="title: mac下mysql5.1.6解决乱码tags: [mysql,乱码]date: 2015-05-17 22:49:15categories:
-description:mac下mysql5.1.6解决乱码">
+    <meta name="description" itemprop="description" content="mac下mysql5.1.6解决乱码">
     
     
     
@@ -70,15 +69,15 @@ description:mac下mysql5.1.6解决乱码">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/05/17/mac下mysql5-1-6解决乱码/" title="" itemprop="url"></a>
+      <a href="/2015/05/17/mac下mysql5-1-6解决乱码/" title="mac下mysql5.1.6解决乱码" itemprop="url">mac下mysql5.1.6解决乱码</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yiikou.com" title="yiikou">yiikou</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-05-17T14:50:31.000Z" itemprop="datePublished">5月 17 2015</time>
-    更新日期:<time datetime="2015-05-17T14:50:31.000Z" itemprop="dateModified">5月 17 2015</time>
+    <time datetime="2015-05-17T14:49:15.000Z" itemprop="datePublished">5月 17 2015</time>
+    更新日期:<time datetime="2015-05-17T15:43:01.000Z" itemprop="dateModified">5月 17 2015</time>
     
   </p>
 </header>
@@ -87,21 +86,38 @@ description:mac下mysql5.1.6解决乱码">
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description:mac下mysql5-1-6解决乱码"><span class="toc-number">1.</span> <span class="toc-text">description:mac下mysql5.1.6解决乱码</span></a></li></ol>
+		
 		</div>
 		
-		<p>title: mac下mysql5.1.6解决乱码<br>tags: [mysql,乱码]<br>date: 2015-05-17 22:49:15<br>categories:</p>
-<h2 id="description:mac下mysql5-1-6解决乱码">description:mac下mysql5.1.6解决乱码</h2>
+		<ol>
+<li><figure class="highlight /usr/local/mysql/support-files/下找到my-medium.cnf文件复制到/usr/local/mysql```重命名为my.cnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">2. </span>在</div></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>[client]</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="escape">``</span><span class="escape">`[</span>mysqld]</div></pre></td></tr></table></figure>
+
+<p><code>[mysql]</code>这三个字段的下面分别添加<code>default-character-set=utf82</code></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/mysql/">mysql</a><a href="/tags/乱码/">乱码</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/fixBug/">fixBug</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yiikou.com/2015/05/17/mac下mysql5-1-6解决乱码/" data-title="一口宅" data-tsina="190698642" class="share clearfix">
+  <div data-url="http://yiikou.com/2015/05/17/mac下mysql5-1-6解决乱码/" data-title="mac下mysql5.1.6解决乱码 | 一口宅" data-tsina="190698642" class="share clearfix">
   </div>
 
 </div>
@@ -131,7 +147,7 @@ description:mac下mysql5.1.6解决乱码">
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description:mac下mysql5-1-6解决乱码"><span class="toc-number">1.</span> <span class="toc-text">description:mac下mysql5.1.6解决乱码</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
@@ -144,6 +160,8 @@ description:mac下mysql5.1.6解决乱码">
 		<ul>
 		
 			<li><a href="/categories/example/" title="example">example<sup>1</sup></a></li>
+		
+			<li><a href="/categories/fixBug/" title="fixBug">fixBug<sup>1</sup></a></li>
 		
 			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
 		
@@ -178,11 +196,13 @@ description:mac下mysql5.1.6解决乱码">
 		
 			<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
 		
-			<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+			<li><a href="/tags/mysql/" title="mysql">mysql<sup>2</sup></a></li>
 		
 			<li><a href="/tags/spring/" title="spring">spring<sup>1</sup></a></li>
 		
 			<li><a href="/tags/webx3/" title="webx3">webx3<sup>1</sup></a></li>
+		
+			<li><a href="/tags/乱码/" title="乱码">乱码<sup>1</sup></a></li>
 		
 			<li><a href="/tags/代码规范/" title="代码规范">代码规范<sup>1</sup></a></li>
 		
@@ -203,8 +223,6 @@ description:mac下mysql5.1.6解决乱码">
 			<li><a href="/tags/规则/" title="规则">规则<sup>1</sup></a></li>
 		
 			<li><a href="/tags/读书笔记/" title="读书笔记">读书笔记<sup>2</sup></a></li>
-		
-			<li><a href="/tags/阅读/" title="阅读">阅读<sup>2</sup></a></li>
 		
 		</ul>
 </div>

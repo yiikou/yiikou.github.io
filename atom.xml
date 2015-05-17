@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-05-17T15:26:47.933Z</updated>
+  <updated>2015-05-17T15:43:10.144Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -15,18 +15,31 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[]]></title>
+    <title><![CDATA[mac下mysql5.1.6解决乱码]]></title>
     <link href="http://yiikou.com/2015/05/17/mac%E4%B8%8Bmysql5-1-6%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/"/>
     <id>http://yiikou.com/2015/05/17/mac下mysql5-1-6解决乱码/</id>
-    <published>2015-05-17T14:50:31.000Z</published>
-    <updated>2015-05-17T14:50:31.000Z</updated>
-    <content type="html"><![CDATA[<p>title: mac下mysql5.1.6解决乱码<br>tags: [mysql,乱码]<br>date: 2015-05-17 22:49:15<br>categories:</p>
-<h2 id="description:mac下mysql5-1-6解决乱码">description:mac下mysql5.1.6解决乱码</h2>
+    <published>2015-05-17T14:49:15.000Z</published>
+    <updated>2015-05-17T15:43:01.000Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li><figure class="highlight /usr/local/mysql/support-files/下找到my-medium.cnf文件复制到/usr/local/mysql```重命名为my.cnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">2. </span>在</div></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>[client]</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="escape">``</span><span class="escape">`[</span>mysqld]</div></pre></td></tr></table></figure>
+
+<p><code>[mysql]</code>这三个字段的下面分别添加<code>default-character-set=utf82</code></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>title: mac下mysql5.1.6解决乱码<br>tags: [mysql,乱码]<br>date: 2015-05-17 22:49:15<br>categories:</p>
-<h2 id="description:mac下mysql5-1-6解决乱码">des]]>
+    <![CDATA[mac下mysql5.1.6解决乱码]]>
+    
     </summary>
+    
+      <category term="mysql" scheme="http://yiikou.com/tags/mysql/"/>
+    
+      <category term="乱码" scheme="http://yiikou.com/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+      <category term="fixBug" scheme="http://yiikou.com/categories/fixBug/"/>
     
   </entry>
   

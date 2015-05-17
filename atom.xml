@@ -4,7 +4,7 @@
   <subtitle><![CDATA[吃吃吃,码码码,逛逛逛,拍拍拍]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yiikou.com/"/>
-  <updated>2015-05-09T16:45:49.367Z</updated>
+  <updated>2015-05-17T15:26:47.933Z</updated>
   <id>http://yiikou.com/</id>
   
   <author>
@@ -13,6 +13,22 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://yiikou.com/2015/05/17/mac%E4%B8%8Bmysql5-1-6%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/"/>
+    <id>http://yiikou.com/2015/05/17/mac下mysql5-1-6解决乱码/</id>
+    <published>2015-05-17T14:50:31.000Z</published>
+    <updated>2015-05-17T14:50:31.000Z</updated>
+    <content type="html"><![CDATA[<p>title: mac下mysql5.1.6解决乱码<br>tags: [mysql,乱码]<br>date: 2015-05-17 22:49:15<br>categories:</p>
+<h2 id="description:mac下mysql5-1-6解决乱码">description:mac下mysql5.1.6解决乱码</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>title: mac下mysql5.1.6解决乱码<br>tags: [mysql,乱码]<br>date: 2015-05-17 22:49:15<br>categories:</p>
+<h2 id="description:mac下mysql5-1-6解决乱码">des]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[mac下mysql终端启动]]></title>
@@ -577,7 +593,7 @@
     <link href="http://yiikou.com/2015/03/05/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
     <id>http://yiikou.com/2015/03/05/健身笔记/</id>
     <published>2015-03-05T08:06:40.000Z</published>
-    <updated>2015-05-09T16:45:31.000Z</updated>
+    <updated>2015-05-17T15:26:16.000Z</updated>
     <content type="html"><![CDATA[<p>笔记于 凌云健身(<a href="http://weibo.com/mikelingfitness?from=feed&amp;loc=nickname" target="_blank" rel="external">微博</a>)</p>
 <h1 id="选择哑铃(视频)">选择哑铃(<a href="http://v.youku.com/v_show/id_XODMwNTIzOTI0.html" target="_blank" rel="external">视频</a>)</h1>
 <p>标准动作(站立)可以10-14下</p>
@@ -733,6 +749,45 @@
 <li>初学者<br>同一个部位 每周两到三次.每个部分留到两到三天,初学者可以多练点,修复比较快,刺激强<br> 周一 胸部 三头肌(协同肌群)<br> 周二 背 二头肌<br> 周三休息<br> 周四 腿<br> 周五 肩部(强度不大)<br> 周六 二头肌+三头肌<br> 核心肌群看情况加</li>
 <li>高级者<br>训练一年以上,每个部位一周一次大强度的</li>
 </ul>
+<h2 id="他人健身计划参考">他人健身计划参考</h2>
+<h3 id="星期一：胸（国际推胸日哈哈）">星期一：胸（国际推胸日哈哈）</h3>
+<p>跳绳热身10min拉伸</p>
+<ol>
+<li>平板卧推10kg（单片的重量）20次<br>15kg~20kg~25kg~30kg~25kg~20kg基本上在12~15左右  </li>
+<li>下斜俯卧撑三组每组力竭  </li>
+<li>蝴蝶机夹胸12次/四组  </li>
+<li>腹肌基本上是按照健美操的传统 两头起200次  </li>
+</ol>
+<h3 id="星期二_背">星期二 背</h3>
+<p>跳绳热身10min  </p>
+<ol>
+<li>引体向上10次  </li>
+<li>俯身杠铃划船12次  </li>
+<li>俯身哑铃划船15次  三个动作循环六组  </li>
+<li>腹肌悬垂举腿每组20五组  </li>
+</ol>
+<h3 id="星期三_二头&amp;三头">星期三 二头&amp;三头</h3>
+<ol>
+<li>二头弯举与双臂下压各十五次/四组  </li>
+<li>交替哑铃弯举与仰卧臂屈伸20次/四组  </li>
+<li>反握引体向上与夹肘俯卧撑力竭/两组  </li>
+</ol>
+<h3 id="星期四_休息">星期四 休息</h3>
+<h3 id="星期五_肩">星期五 肩</h3>
+<p>跳绳热身20分钟   </p>
+<ol>
+<li>倒立俯卧撑力竭/10组</li>
+<li>哑铃侧平举12次/五组</li>
+<li>俯身飞鸟（后束）小重量30次三组</li>
+</ol>
+<h3 id="星期六">星期六</h3>
+<ol>
+<li>热身慢跑10分钟</li>
+<li>50米冲刺五组</li>
+<li>慢跑20分钟</li>
+<li>蛙跳100米,自重深蹲100自重深蹲跳100</li>
+</ol>
+<h3 id="星期天_休息">星期天 休息</h3>
 <h2 id="健身进度">健身进度</h2>
 <p>截止日期2015/3/5: 第一次健身,未使用哑铃器械</p>
 <p>PS:增肌期有氧目的有两个：1. 提高心肺功能 2. 控制体脂增长过快。一般可以安排到力量训练后做20分钟，每周2-3次，根据体脂增长速度调节。增肌期晚上可以吃慢吸收碳水</p>
@@ -792,9 +847,21 @@
 <blockquote>
 <p>记录下重量，上推，5x15+6x2x15+7x2x12+8x6，前平举侧平举，7.5x6+5x4x15，</p>
 </blockquote>
-<p>20150/05/09，胸部训练，前几天跑步去了</p>
+<p>2150/05/09，胸部训练，前几天跑步去了</p>
 <blockquote>
 <p>记录下重量，斜上推，斯密斯基，5x1x12+7.5x2x12+10x1x8+7.5x2x12+5x1x12;卧推，7.5x4x12;斜下推，12x4x12;飞鸟，7.5x3x8；龙门架夹胸,5x1x12+10x2x8+5x2x12，记得要手臂尽量保持不变形，不要弯；腹肌撕裂者到第十天，腹肌腿上抬15x4很轻松；龙门架下拉，25x1x15+30x3x15+5x2x15</p>
+</blockquote>
+<p>2015/05/1x肩部训练,腹部腰部负重</p>
+<blockquote>
+<p>记录下重量，上推:6+7+8+8+7+7;前平举侧平举:5x4x15;肩部提拉:5x4x12;拉至眼睛:3x4x12;手撑腿抬:4x15（轻松）;腹部:48+54+48)x12;腰部:32+48+48+48)x15对;前跑步10后跑步10</p>
+</blockquote>
+<p>2015/05/15腿部训练</p>
+<blockquote>
+<p>记录下重量，深蹲:5+7.5+10+12.5+15+15+10)x12;弓步:10kgx4x16;抬腿:7x4x15</p>
+</blockquote>
+<p>2015/05/16胸部训练</p>
+<blockquote>
+<p>记录下重量，斜上推:5+7.5+10+10)x12+10x8+10x5;龙门架拉胸:2+2)x15+1x4~5x15;斜下推:12x2x12;卧推:7.5x4x12;飞鸟:5x3x12;杠铃斜上推:7.5x2x8</p>
 </blockquote>
 ]]></content>
     <summary type="html">
